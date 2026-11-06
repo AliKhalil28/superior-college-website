@@ -1,3 +1,5 @@
+import type { Metadata, Viewport } from "next";
+import React from "react";
 import { Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 
@@ -7,7 +9,7 @@ const sourceSans = Source_Sans_3({
   variable: "--font-sans"
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   metadataBase: new URL("https://superiorcollegemc.com"),
   title: "Superior College Mian Channu | Intermediate, BS & UK Level 3",
   description:
@@ -39,7 +41,7 @@ export const metadata = {
   }
 };
 
-export const viewport = {
+export const viewport: Viewport = {
   themeColor: "#0e6c6e"
 };
 
@@ -61,13 +63,21 @@ const jsonLd = {
   openingHours: "Mo-Sa 08:00-18:00"
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" className={sourceSans.variable}>
       <body>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         {children}
       </body>
     </html>
   );
 }
+

@@ -1,3 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #0a4547;
+  --color-night: #0e6c6e;
+  --color-ivory: #f4f8f7;
+  --color-paper: #fffcf8;
+  --color-gold: #dd932d;
+  --color-gold-deep: #8c5410;
+  --color-muted: #3d5c5e;
+}
+
 :root {
   --ink: #0a4547;
   --night: #0e6c6e;

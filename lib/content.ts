@@ -1,4 +1,6 @@
-export const leaders = [
+import { Leader, Program, FaqItem } from "../types";
+
+export const leaders: Leader[] = [
   {
     name: "Sheikh Sajjad",
     role: "Chairman",
@@ -36,7 +38,7 @@ export const leaders = [
   }
 ];
 
-export const ticker = [
+export const ticker: string[] = [
   "F.Sc Pre-Medical",
   "F.Sc Pre-Engineering",
   "ICS",
@@ -56,7 +58,7 @@ export const ticker = [
   "UK Level 3"
 ];
 
-export const programs = [
+export const programs: Program[] = [
   {
     id: "bs-ai",
     image: "/images/programs/ai.jpg",
@@ -299,7 +301,7 @@ export const programs = [
   }
 ];
 
-export const faqs = [
+export const faqs: FaqItem[] = [
   {
     q: "Where is the campus, exactly?",
     a: "Near the NADRA office on Multan Road (G.T. Road), Mian Channu, District Khanewal. The same address appears on the GCUF and IUB affiliation lists."
@@ -333,3 +335,4 @@ export const faqs = [
     a: "They change. The admissions office gives the current fee in person, on 0300 6892113, or on WhatsApp."
   }
 ];
+
