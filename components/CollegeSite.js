@@ -153,7 +153,7 @@ export default function CollegeSite() {
     const channel = event.nativeEvent.submitter?.dataset.channel || "whatsapp";
 
     if (channel === "email") {
-      window.location.href = `mailto:info@superiorcolleges.edu.pk?subject=${encodeURIComponent("Admission query — Mian Channu")}&body=${encodeURIComponent(text)}`;
+      window.location.href = `mailto:info@superiorcollegemc.com?subject=${encodeURIComponent("Admission query — Mian Channu")}&body=${encodeURIComponent(text)}`;
       setStatus({ text: "Your email app should open with this message. For a faster answer, call the campus." });
       return;
     }
@@ -314,8 +314,8 @@ export default function CollegeSite() {
           <div className="wrap">
             <header className="section-head reveal">
               <p className="kicker">Programs Offered</p>
-              <h2 className="section-title">Sixteen ways to <em>begin.</em></h2>
-              <p className="lede">Five intermediate streams for the Multan Board, ten bachelor’s degrees, and a UK Level 3 qualification. There is no diploma.</p>
+              <h2 className="section-title">Seventeen ways to <em>begin.</em></h2>
+              <p className="lede">Five intermediate streams for the Multan Board, eleven bachelor’s degrees, and a UK Level 3 qualification. There is no diploma.</p>
             </header>
             <div className="program-bar reveal">
               <div className="filters" role="group" aria-label="Filter programs">
@@ -513,7 +513,7 @@ export default function CollegeSite() {
             <div className="paths">
               {[
                 ["01", "Computing & AI", "Software, data, and further study for students of ICS, CS, SE, IT, Data Science, and Artificial Intelligence."],
-                ["02", "Health & science", "Medicine, allied health, and laboratory science for Pre-Medical, Zoology, and Chemistry."],
+                ["02", "Health & science", "Medicine, allied health, and dietary science for Pre-Medical, HND, Zoology, and Chemistry."],
                 ["03", "Business", "Enterprise, finance, and management for I.Com and BBA graduates."],
                 ["04", "Public life", "Teaching, media, and community work for F.A, English, Psychology, and UK Level 3 graduates."]
               ].map(([n, title, text], i) => (
@@ -551,7 +551,7 @@ export default function CollegeSite() {
             <header className="section-head reveal">
               <p className="kicker">Contact Us</p>
               <h2 className="section-title">Come in, or <em>send the question.</em></h2>
-              <p className="lede">WhatsApp reaches the campus mobile. Email goes to the Superior Group address, so the phone is faster when a seat is the question.</p>
+              <p className="lede">WhatsApp reaches the campus mobile. You can also email the campus desk directly, though calling is faster when a seat is the question.</p>
             </header>
             <div className="contact-grid">
               <form className="form-card reveal" onSubmit={submitVisit} noValidate>
@@ -602,8 +602,8 @@ export default function CollegeSite() {
                     <a href="tel:+923006892113">0300 6892113</a>
                   </li>
                   <li>
-                    <small>Superior Group email</small>
-                    <a href="mailto:info@superiorcolleges.edu.pk">info@superiorcolleges.edu.pk</a>
+                    <small>Campus email</small>
+                    <a href="mailto:info@superiorcollegemc.com">info@superiorcollegemc.com</a>
                   </li>
                   <li><small>Hours</small>Monday–Saturday, 8:00 am – 6:00 pm. Sunday closed.</li>
                 </ul>

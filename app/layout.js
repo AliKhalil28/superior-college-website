@@ -8,10 +8,35 @@ const sourceSans = Source_Sans_3({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://superiorcollegemc.com"),
   title: "Superior College Mian Channu | Intermediate, BS & UK Level 3",
   description:
     "Superior College Mian Channu on Multan Road. Intermediate, bachelor’s, and UK Level 3. Multan Board positions, and BS convocations already held for 2024, 2025, and 2026.",
-  icons: { icon: "/logo.png" }
+  icons: { icon: "/logo.png", apple: "/logo.png" },
+  openGraph: {
+    title: "Superior College Mian Channu | Intermediate, BS & UK Level 3",
+    description:
+      "Superior College Mian Channu on Multan Road. Intermediate, bachelor’s, and UK Level 3. Admissions open.",
+    url: "https://superiorcollegemc.com",
+    siteName: "Superior College Mian Channu",
+    images: [
+      {
+        url: "/images/campus.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Superior College Mian Channu Campus"
+      }
+    ],
+    locale: "en_PK",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Superior College Mian Channu",
+    description:
+      "Intermediate, bachelor’s, and UK Level 3 on Multan Road, Mian Channu.",
+    images: ["/images/campus.jpg"]
+  }
 };
 
 export const viewport = {
@@ -32,7 +57,7 @@ const jsonLd = {
     addressCountry: "PK"
   },
   telephone: ["+923330870044", "+923006892113"],
-  email: "info@superiorcolleges.edu.pk",
+  email: "info@superiorcollegemc.com",
   openingHours: "Mo-Sa 08:00-18:00"
 };
 
